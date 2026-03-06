@@ -17,10 +17,7 @@ allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Task, AskUserQuestion
 ## Process
 
 ### Step 1: Проверка авторизации
-- Вызвать `notebook_list(max_results=1)` — если ошибка авторизации:
-  1. Запустить Brave: `"/Applications/Brave Browser.app/Contents/MacOS/Brave Browser" --remote-debugging-port=18800 --no-first-run --no-default-browser-check &`
-  2. Авторизоваться: `nlm login --provider openclaw --cdp-url http://127.0.0.1:18800`
-  3. Обновить токены: `refresh_auth()`
+См. `~/.claude/skills/shared/notebooklm-auth.md`
 
 ### Step 2: Парсинг входа
 - Определить тип ссылки: одно видео, несколько ссылок, или плейлист
